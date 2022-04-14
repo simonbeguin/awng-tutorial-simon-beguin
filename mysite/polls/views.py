@@ -86,3 +86,11 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+    
+    
+
+def print_base(request):
+    return render(request, 'polls/base.html')
+
+def print_base_child(request):
+    return render(request, 'polls/base_child.html')

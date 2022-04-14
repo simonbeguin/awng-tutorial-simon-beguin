@@ -10,4 +10,6 @@ urlpatterns = [
     path('<int:question_id>/vote/', views.vote, name='vote'),
     path('form', views.get_name, name='form'),
     path('thanks', views.print_thanks, name = 'thanks'),
+    path('base', views.print_base, name = 'base'),
+    path('basechild', views.print_base_child, name = 'base_child'),
 ]
